@@ -117,4 +117,18 @@ img{
         height: auto;
         padding: 2%;
     }
+
+    #comoFunciona{
+        display: none;
+        position: fixed;
+        top: 15%;
+        right: 20%;
+        height: auto;
+        width: 60%;
+    }
+    #titulo{
+        padding: 6%;
+        margin-top: 40%;
+    
+    }
 }
