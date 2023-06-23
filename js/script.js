@@ -1,11 +1,11 @@
-//resultados Mega Sena anteriores = criar um banco de dados		
+//resultados Mega Sena anteriores = criar um banco de dados
 //Matriz contendo os números de 1 a 60, semelhante ao sorteiro original
 let numeros = [];
 let atual = 1;
-while (atual <= 60){
-    numeros.push(atual)
-    atual++;
-    console.log(numeros)
+while (atual <= 60) {
+  numeros.push(atual);
+  atual++;
+  console.log(numeros);
 }
 
 /* =============================================================== */
@@ -53,52 +53,45 @@ console.log(numeros);
 /* Enviando os resultados para o DOM */
 
 //n1
-if(n1<10){
-    document.getElementById("n1").innerHTML = '0'+ n1;
-}
-
-else{
-    document.getElementById("n1").innerHTML = n1;
+if (n1 < 10) {
+  document.getElementById("n1").innerHTML = "0" + n1;
+} else {
+  document.getElementById("n1").innerHTML = n1;
 }
 
 //n2
-if(n2<10){
-    document.getElementById("n2").innerHTML = '0'+ n2;
-}
-else{
-    document.getElementById("n2").innerHTML = n2;
+if (n2 < 10) {
+  document.getElementById("n2").innerHTML = "0" + n2;
+} else {
+  document.getElementById("n2").innerHTML = n2;
 }
 
 //n3
-if(n3<10){
-    document.getElementById("n3").innerHTML = '0'+ n3;
-}
-else{
-    document.getElementById("n3").innerHTML = n3;
+if (n3 < 10) {
+  document.getElementById("n3").innerHTML = "0" + n3;
+} else {
+  document.getElementById("n3").innerHTML = n3;
 }
 
 //n4
-if(n4<10){
-    document.getElementById("n4").innerHTML = '0'+ n4;
-}
-else{
-    document.getElementById("n4").innerHTML = n4;
+if (n4 < 10) {
+  document.getElementById("n4").innerHTML = "0" + n4;
+} else {
+  document.getElementById("n4").innerHTML = n4;
 }
 
 //n5
-if(n5<10){
-    document.getElementById("n5").innerHTML = '0'+ n5;
-}
-else{
-    document.getElementById("n5").innerHTML = n5;
+if (n5 < 10) {
+  document.getElementById("n5").innerHTML = "0" + n5;
+} else {
+  document.getElementById("n5").innerHTML = n5;
 }
 
 //n6
-if(n6<10){
-    document.getElementById("n6").innerHTML = '0'+ n6;
-}
-else{
-    document.getElementById("n6").innerHTML = n6;
+if (n6 < 10) {
+  document.getElementById("n6").innerHTML = "0" + n6;
+} else {
+  document.getElementById("n6").innerHTML = n6;
 }
 
 /* ================================================================= */
@@ -107,25 +100,21 @@ else{
 // funcionamento dos botões do header
 
 btn1 = document.getElementById("btn1");
-btn1.onclick = function(){
-    tornarVisivel("comoFunciona");
-}
+btn1.onclick = function () {
+  tornarVisivel("comoFunciona");
+};
 
 btn2 = document.getElementById("btn2");
-btn2.onclick = function(){
-    tornarVisivel("contato");
+btn2.onclick = function () {
+  tornarVisivel("contato");
+};
+
+function tornarVisivel(idElemento) {
+  var elemento = document.getElementById(idElemento);
+
+  if (elemento.style.display == "block") {
+    elemento.style.display = "none";
+  } else {
+    elemento.style.display = "block";
+  }
 }
-
-function tornarVisivel (idElemento){
-    var elemento = document.getElementById(idElemento);
-   
-    if(elemento.style.display == "block"){
-        elemento.style.display = "none";
-    }    
-    else{
-        elemento.style.display = "block";
-    }
-        
-}
-
-
