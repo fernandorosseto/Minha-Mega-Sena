@@ -49,32 +49,3 @@ function refreshResult() {
 }
 
 refresh.addEventListener("click", refreshResult);
-
-//2ª - Botão "Copiar jogo"
-
-const copyGame = document.getElementById("copyGame");
-
-function copyGameFunction() {
-	const copyElements = document.querySelectorAll(".number");
-	const textCopyElements = Array.from(copyElements)
-		.map((element) => element.textContent)
-		.join("\n");
-
-	if (navigator.clipboard) {
-		navigator.clipboard
-			.writeText(textCopyElements)
-			.then(function () {
-				alert("Copiado para área de transferência:" + textCopyElements);
-			})
-			.catch(function (err) {
-				alert("Não foi possível copiar o texto:" + err);
-			});
-	} else {
-		// Caso a API de área de transferência não seja suportada
-		alert("A API de área de transferência não é suportada neste navegador.");
-	}
-}
-
-copyGame.addEventListener("click", copyGameFunction);
-
-//------------------------------------------------------------------------
