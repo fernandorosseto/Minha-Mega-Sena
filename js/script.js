@@ -1,4 +1,4 @@
-//resultados Mega Sena anteriores = criar um banco de dados
+//resultados Mega Sena anteriores = api
 
 /* =============================================================== */
 
